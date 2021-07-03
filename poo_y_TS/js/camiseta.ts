@@ -1,15 +1,15 @@
 //Interface
 
-interface CamisetaBase{
-    set color(color:string)
-    get color():string
+interface CamisetaBase {
+    set color(color: string)
+    get color(): string
 }
 
 
 //Clase (modelo del objeto)
 
-    /*export*/
-    class Camiseta implements CamisetaBase{
+/*export*/
+class Camiseta implements CamisetaBase {
     //Propiedades (caracteristicas del objeto)
     private _color: string
     private _modelo: string
@@ -19,7 +19,7 @@ interface CamisetaBase{
     //Metodos (funciones o acciones del objeto)
 
     //Constructor
-    constructor(color:string, modelo:string, marca:string, talla:string, precio:number){
+    constructor(color: string, modelo: string, marca: string, talla: string, precio: number) {
         this._color = color
         this._modelo = modelo
         this._marca = marca
