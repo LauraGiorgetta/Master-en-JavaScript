@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="hola_mundo.js"></script>
+    <script src="practicando_con_selectores.js"></script>
+    <script src="cursor.js"></script>
+    <style>
+        #cursor{
+            position: fixed;
+            width: 1rem;
+            height: 1rem;
+            background-color: aquamarine;
+            opacity: .5;
+            border-radius: 50%;
+            box-shadow: darkslategrey 0 0 5px 1px;
+        }
+        *{
+            cursor: url(cursor.svg), none;
+        }
+    </style>
+</head>
+<body>
+    <div id="cursor"></div>
+    <p id="rojo" class="nya">Rojo</p>
+    <p class="nya">Amarillo</p>
+    <p class="nya">Azul</p>
+    
+</body>
+</html>

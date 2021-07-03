@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="ajax.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            flex: 100%;
+            text-align: center;
+        }
+
+        #ajax,
+        #get,
+        #post,
+        #ajax2 {
+            width: 50%;
+            height: 15rem;
+            overflow: auto;
+            background-color: thistle;
+            border: darkred 5px ridge;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AJAX</h1>
+    <div id="ajax"></div>
+    <div id="get"></div>
+    <div id="post"></div>
+    <div id="ajax2"></div>
+    <form action="https://jsonplaceholder.typicode.com/users" method="post" id="formulario">
+        <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+        <input type="email" placeholder="Mail" name="email" id="email">
+        <input type="text" placeholder="Nombre de Usuario" name="username" id="username">
+        <input type="submit" value="Registrar">
+    </form>
+
+</body>
+
+</html>

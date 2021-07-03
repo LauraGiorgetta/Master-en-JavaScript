@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaces</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+
+    <!-- Estos dos estilos son para resizable -->
+    <link rel="stylesheet" href="../jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
+    <script src="../jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="interfaces.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            flex: 100%;
+            color: crimson;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 1rem;
+        }
+
+        .elemento, .moveme, .area {
+            width: 20rem;
+            background-color: brown;
+            color: darksalmon;
+            border: crimson .5rem groove;
+            margin: 1rem;
+            font-size: 1.2rem;
+            height: 15rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        ul li {
+            cursor: pointer;
+            list-style: none;
+            padding: .5rem;
+            width: 80%;
+            border: darkred 1px dashed;
+        }
+
+        ul {
+            flex: 100%
+        }
+        /*Para selectable clases de JQuery UI*/
+        .JQuery-selectable .ui-selecting{
+            background-color: hotpink;
+        }
+        .JQuery-selectable .ui-selected{
+            background-color: indianred;
+        }
+        /* Fin selectable*/
+        .moveme{
+            width: 10rem;
+            background-color: lightcoral;
+            height: 10rem;
+            color: lightblue;
+        }
+        .area{
+            width: 25rem;
+            background-color: lightblue;
+            color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Interfaces JQuery UI</h1>
+    <ul class="JQuery-selectable">
+        <li>Chocotorta</li>
+        <li>Flan con dulce</li>
+        <li>Torta de crema</li>
+        <li>Budin de pan</li>
+        <li>Helado</li>
+    </ul>
+    <ul class="JQuery-sortable">
+        <li>Puchero</li>
+        <li>Milanesa</li>
+        <li>Guiso</li>
+        <li>Choripan</li>
+        <li>Risoto</li>
+        <li>Mondongo</li>
+    </ul>
+    <div class="moveme">Moveme dentro</div>
+    <div class="area">Move a chiquito dentro mio</div>
+    
+    <div class="elemento">
+        <p>Hola, soy un elemento de la web 1</p>
+    </div>
+    <div class="elemento">Hola, soy un elemento de la web 2</div>
+    <div class="elemento">Hola, soy un elemento de la web 3</div>
+    <div class="elemento">Hola, soy un elemento de la web 4</div>
+    <div class="elemento">Hola, soy un elemento de la web 5</div>
+
+</body>
+
+</html>

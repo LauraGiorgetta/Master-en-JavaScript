@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*container*/
+
+#global {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: azure;
+    box-shadow: 0 0 1px gray;
+}
+
+/*Header*/
+
+/*h1*/
+
+#logo {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+    color: white;
+    width: 24rem;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+/*menu*/
+
+#menu {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #333;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+#menu ul {
+    line-height: 2rem;
+    display: flex;
+    list-style: none;
+}
+
+#menu li {
+    padding: .5rem;
+    transition: all 300ms;
+}
+
+#menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+/*fin menu*/
+
+/*fin header*/
+
+/*Section principal*/
+
+#content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#posts {
+    width: 60%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.post {
+    padding: 1rem;
+}
+
+.post h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.post .date {
+    color: gray;
+    display: block;
+    margin: .5rem 0;
+}
+
+.post p {
+    line-height: 1.5em;
+}
+
+.button-more {
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+/*Fin seccion principal*/
+
+/*Aside*/
+
+#sidebar {
+    font-family: Helvetica, Arial, sans-serif;
+    width: 15rem;
+    padding: 1rem;
+}
+
+#sidebar img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#sidebar h2 {
+    text-align: center;
+    background-image: url("../img/lines.png");
+    background-repeat: repeat-x;
+    background-position-y: center;
+    font-size: 1.1rem;
+}
+
+#sidebar h2 span {
+    background-color: azure;
+}
+
+#sidebar p {
+    line-height: 1.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: .3rem;
+    margin: .5rem 0;
+}
+
+form button {
+    background-color: #eee;
+    padding: .5rem 1rem;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+/*Fin Aside*/
+
+/*Footer*/
+
+footer {
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    width: 65%;
+    margin: 1rem auto;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Fin Footer*/
+
+/*Slider*/
+
+.bx-viewport {
+    height: 20rem !important;
+}
+
+/*Fin Slider*/
+
+/*Theme*/
+
+#selector-theme {
+    position: fixed;
+    top: 40%;
+    background-color: rgba(51, 51, 51, 0.795);
+    padding: 1rem;
+    border: 1px solid white;
+    border-left: none;
+}
+
+#to-green, #to-red, #to-blue {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid white;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#to-green {
+    background-color: #235E3D;
+}
+
+#to-red {
+    background-color: #CA3413;
+}
+
+#to-blue {
+    background-color: #1F87C4;
+}
+
+/*Fin Theme*/
+
+/*Logout*/
+
+#logout {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: .5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/*Fin Logout*/
+
+/*Acordeon*/
+#acordeon {
+    width:70%;
+}
+/*Fin Acordeon*/
+
+/*Reloj*/
+#reloj h2{
+    font-size:5rem;
+    font-weight: normal;
+    padding: 2rem;
+    border-radius: 3rem;
+    border: 3px solid #ccc;
+}
+/*Fin Reloj*/
+
+/*Formulario contacto*/
+#contact h2{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#form_contact label{
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-top: 1rem;
+}
+#form_contact {
+    width: 15rem;
+}
+
+/*Fin formulario contacto*/

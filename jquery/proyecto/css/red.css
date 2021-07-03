@@ -1,0 +1,19 @@
+body {
+    background-image: url("../img/rojo.jpg");
+}
+
+#logo {
+    background-color: #CA3413;
+}
+
+#menu li:hover {
+    background-color: #CA3413;
+}
+
+.button-more {
+    background-color: #CA3413;
+}
+
+form input {
+    border: 1px solid#CA3413;
+}

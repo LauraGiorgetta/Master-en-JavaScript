@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con JavaScript</title>
+
+    <!--JQuery-->
+    <script src="../jquery-3.6.0.min.js"></script>
+
+    <!--Moment: CDN https://cdnjs.com/libraries/moment.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+
+    <!--Mis Estilos-->
+    <link rel="stylesheet" href="css/style.css">
+    <link id="theme" rel="stylesheet" href="css/green.css">
+
+    <!--Mis Scripts-->
+    <script src="js/main.js"></script>
+
+
+</head>
+
+<body>
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+    <section id="global">
+        <header>
+            <h1 id="logo">Proyecto JS</h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="content">
+            <div id="reloj">
+               <h2>Reloj</h2>
+            </div>
+
+            <aside id="sidebar">
+                <div id="about">
+                    <h2><span>¿Quien Soy?</span></h2>
+                    <img src="img/caracol.jpg" alt="caracol">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae dolorum provident
+                        voluptates molestiae nobis ipsa voluptatem, minima soluta, sint assumenda doloremque consequatur
+                        odio dignissimos quisquam porro obcaecati accusantium quos adipisci.
+                    </p>
+                </div>
+                <div class="login">
+                    <h2><span>Registrate</span></h2>
+                    <form action="">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <label for="email">Mail</label>
+                        <input type="email" name="email" id="email">
+                        <label for="name">Contraseña</label>
+                        <input type="password" name="pass" id="pass">
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+
+            </aside>
+        </section>
+    </section>
+    <footer>
+        Master de JavaScript de Victor Robles &copy;
+        <a href="#">Subir</a>
+    </footer>
+</body>
+
+</html>
