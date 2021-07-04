@@ -1,15 +1,28 @@
 //Interface
 
-interface CamisetaBase {
+//**La clase hijo tambien tiene que implementar estos metodos porque sino tira error
+/* interface CamisetaBase {
     set color(color: string)
     get color(): string
+}
+
+*/
+
+//* Decorador
+function estampar(logo:string){
+    return function(target:Function){
+        target.prototype.estampacion = function():void{
+            console.log('Camiseta estampada con el logo de: ' + logo)
+        }
+    }
 }
 
 
 //Clase (modelo del objeto)
 
 /*export*/
-class Camiseta implements CamisetaBase {
+@estampar('Gucci Gang')
+class Camiseta /*implements CamisetaBase*/ {
     //Propiedades (caracteristicas del objeto)
     private _color: string
     private _modelo: string
@@ -65,6 +78,27 @@ class Camiseta implements CamisetaBase {
 
 }
 
+class Sudadera extends Camiseta {
+    private _capucha: boolean
+
+    //Constructor
+    //** Toma automaticamente el constructor del padre
+    /*constructor(color:string, modelo:string, marca:string, talla:string, precio:number, capucha:boolean){
+        super(color, modelo, marca, talla, precio)
+        this._capucha = capucha
+    }*/
+
+    //Getters
+    get capucha(): boolean {
+        return this._capucha
+    }
+    set capucha(capucha: boolean) {
+        this._capucha = capucha
+    }
+
+}
+
+
 //Instanciamos objeto
 let camiseta1 = new Camiseta('red', 'long', 'Nike', 'L', 250);
 
@@ -73,4 +107,9 @@ camiseta1.modelo = 'Manga larga'
 camiseta1.precio = 300
 
 console.log(camiseta1)
+
+//* Como esta el constructor automatico no toma el ultimo valor del hijo, solo los del padre 
+let sudadera1 = new Sudadera('Azul', 'fina con capucha', 'Adidas', 'XL', 500)
+sudadera1.capucha = true
+console.log(sudadera1)
 
