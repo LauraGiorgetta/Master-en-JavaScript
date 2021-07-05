@@ -1,9 +1,13 @@
-<div class="content" role="main">
-  <h1>Bienvenido a {{title}}</h1>
-  <p>Vamos a aprender angular juntos</p>
-  <button (click)='mostrar = false' *ngIf = 'mostrar'>Ocultar</button>
-  <button (click)='mostrar = true' *ngIf = '!mostrar'>Mostrar</button>
-  <app-videojuego *ngIf = 'mostrar'></app-videojuego>
+<div class="content" role="main" [ngStyle]="{
+  'background': config.fondo, 
+  'color': config.color,
+  'padding': '2rem'
+}">
+  <h1>{{title}}</h1>
+  <p>{{descripcion}}</p>
+  <button (click)='mostrar = false' *ngIf='mostrar'>Ocultar</button>
+  <button (click)='mostrar = true' *ngIf='!mostrar'>Mostrar</button>
+  <app-videojuego *ngIf='mostrar'></app-videojuego>
   <app-zapatillas></app-zapatillas>
   <app-cursos></app-cursos>
 </div>
