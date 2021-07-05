@@ -1,8 +1,8 @@
 <div class="content" role="main">
   <h1>Bienvenido a {{title}}</h1>
   <p>Vamos a aprender angular juntos</p>
-  <button (click)='mostrar = false'>Ocultar</button>
-  <button (click)='mostrar = true'>Mostrar</button>
+  <button (click)='mostrar = false' *ngIf = 'mostrar'>Ocultar</button>
+  <button (click)='mostrar = true' *ngIf = '!mostrar'>Mostrar</button>
   <app-videojuego *ngIf = 'mostrar'></app-videojuego>
   <app-zapatillas></app-zapatillas>
   <app-cursos></app-cursos>
