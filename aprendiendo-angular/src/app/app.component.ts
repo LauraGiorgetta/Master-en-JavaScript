@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aprendiendo-angular';
+  public mostrar: boolean =  true;
+
 }
